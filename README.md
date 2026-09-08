@@ -1,23 +1,23 @@
 # Axis Center Each
 
-A small Cinema 4D **2026** plugin that centers each selected object’s axis **individually**, using whatever settings are already on the stock **Axis Center** palette.
+A Cinema 4D **2026** plugin that fixes one gap in the stock **Axis Center** tools.
 
-MIT licensed.
+## What it does
 
-## Why
+Cinema 4D’s Axis Center palette can move an object’s axis (for example to the center of its points, or align it to World). That works great for one object.
 
-Stock Axis Center treats a multi-selection as one group. With tens or hundreds of objects, you otherwise run Execute one object at a time. This sibling palette adds:
+If you select **many** objects and press Execute, Axis Center treats them as **one group**. You get a single shared axis for the whole selection — not a centered axis on each object. For a handful of objects that’s annoying; for tens or hundreds it’s a real time sink.
 
-- **Center Axis objects individually** (checkbox)
-- **Execute** — loops the stock Axis Center action once per selected object
+**Axis Center Each** is a small dockable palette that sits next to Axis Center and adds:
 
-Dock it next to / above the Axis Center palette.
+- A checkbox: **Center Axis objects individually**
+- An **Execute** button that runs the same Axis Center action **once per selected object**, using whatever settings you already chose on the stock palette (Action, Center, Alignment, Include Children, and so on)
+
+So you keep configuring Axis Center the way you always do — this plugin only changes the selection scope from “the group” to “each object.”
 
 ## Install (Cinema 4D 2026)
 
-1. Download `AxisCenterEach.pyp` from the [latest release](https://github.com/HelloFieldgate/c4d-axis-center-each/releases/latest), **or** copy it from this repo:
-
-   `plugins/AxisCenterEach/AxisCenterEach.pyp`
+1. Download `AxisCenterEach.pyp` from the [latest release](https://github.com/HelloFieldgate/c4d-axis-center-each/releases/latest), **or** copy it from this repo at `plugins/AxisCenterEach/AxisCenterEach.pyp`.
 
 2. Put that file in your Cinema 4D prefs **plugins** folder:
 
@@ -27,7 +27,7 @@ Dock it next to / above the Axis Center palette.
      "$HOME/Library/Preferences/Maxon/Maxon Cinema 4D 2026_"*/plugins/
    ```
 
-   **Windows** (PowerShell, adjust the `2026_*` folder name):
+   **Windows** (PowerShell — adjust the `2026_*` folder name if needed):
    ```powershell
    Copy-Item AxisCenterEach.pyp "$env:APPDATA\Maxon\Maxon Cinema 4D 2026_*\plugins\"
    ```
@@ -36,32 +36,21 @@ Dock it next to / above the Axis Center palette.
 
 4. Restart Cinema 4D.
 
-5. Open **Extensions → Axis Center Each** (or Shift+C / Commander and search for it).
+5. Open **Extensions → Axis Center Each** (or press Shift+C / Commander and search for it).
 
 ## Usage
 
-1. Set options on the stock **Axis Center** palette as usual (Action, Center, Alignment, Include Children, …).
+1. Set options on the stock **Axis Center** palette as usual.
 2. Multi-select the objects you want.
 3. In **Axis Center Each**, leave the checkbox on and press **Execute**.
 4. The status line reports how many objects were centered.
 
-With the checkbox off, use the stock palette’s Execute for group behavior.
+With the checkbox off, use the stock palette’s Execute if you want the normal group behavior.
 
 ## Requirements
 
-- Cinema 4D **2026** (developed and verified on macOS)
+- Cinema 4D **2026**
 - No extra dependencies
-
-## Plugin ID
-
-Development ID: `1066127`. For a widely distributed public build, register your own ID at [Maxon Plugin Cafe](https://developers.maxon.net/) and change `PLUGIN_ID` near the top of `AxisCenterEach.pyp` if needed.
-
-## Development
-
-- Plan: `PLAN.md`
-- Spike notes: `SPIKE.md`
-- Driver decision: `docs/axis-center-driver-decision.md`
-- Plugin source: `plugins/AxisCenterEach/AxisCenterEach.pyp`
 
 ## License
 
