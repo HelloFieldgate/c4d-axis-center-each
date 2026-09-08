@@ -1,0 +1,102 @@
+{
+  "crux_version": 2,
+  "crux_id": "sha256:46f7628df76fa6ed0f0bcf1aa8c7ac0a1f753c9a0b547f0f7ea69fa45b0c04b9",
+  "crux_name": "c4d-axis-center-each-policy",
+  "crux_kind": "policy",
+  "crux_origin": "mesh-init",
+  "created_at": 1788888577,
+  "last_modified_at": 1788888577,
+  "mesh_memberships": [],
+  "modules": [
+  ],
+  "domains": [
+  ],
+  "nodes": [
+    {
+      "node_id": "sha256:2c3e782e06207e1a43e88abe1c5650cf7cbc29b41493c9ef59306936b37c3f5b",
+      "name": "Security Policy",
+      "kind": "policy",
+      "module": "security",
+      "summary": "Security classification levels, cross-mesh policy, and access controls",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["security", "policy"],
+      "reach": [],
+      "properties": ["default_classification=internal", "cross_mesh_policy=explicit_allow", "multi_mesh_allowed=true", "allowed_external_meshes=", "require_signatures=false"],
+      "warnings": [],
+      "planning": {
+        "status": null,
+        "priority": null,
+        "depends": [],
+        "updated_at": null,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "restricted",
+        "redact_below": null
+      },
+      "content_hash": "3b554b879f1d0c0fdb888382f4aba22ed39d26f6a0db16c26dd28c4e224895a5",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:f7812f9389378bbe690a1d8118b7221ca4d2c964f48a39998671f6e25dfbdbcf",
+      "name": "Organizational Policy",
+      "kind": "policy",
+      "module": "organization",
+      "summary": "Organizational intent, governance parameters, and membership controls",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["organization", "policy"],
+      "reach": [],
+      "properties": ["org_name=", "org_domain=", "allowed_crux_kinds=", "max_members=", "require_approval=false", "governance_model=open"],
+      "warnings": [],
+      "planning": {
+        "status": null,
+        "priority": null,
+        "depends": [],
+        "updated_at": null,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "restricted",
+        "redact_below": null
+      },
+      "content_hash": "dc2ef7b2e1ae9e178a19a6d2f93b3429fa9e0e6d7de463b9b582b9ba206fb3f3",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:f73506a28c4b2461bbac55383ed1587b8894d6e60c6df0c01ce0547597f8bbbd",
+      "name": "keyring/sha256:46f7628df76fa6ed0f0bcf1aa8c7ac0a1f753c9a0b547f0f7ea69fa45b0c04b9",
+      "kind": "mesh-keyring",
+      "module": "policy",
+      "summary": "W-OTS public key for audit-chain signatures from sha256:46f7628df76fa6ed0f0bcf1aa8c7ac0a1f753c9a0b547f0f7ea69fa45b0c04b9",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["keyring", "signing"],
+      "reach": [],
+      "properties": ["crux_id=sha256:46f7628df76fa6ed0f0bcf1aa8c7ac0a1f753c9a0b547f0f7ea69fa45b0c04b9", "pubkey_hex=13c333aa5c2bd8f884f069fdf5fbb2ba102d76dd13dcade66a1ab34f09cff76a03376473d24ae547bfe2794dbfb0fff0a2b02e023330aea3c25731b5b9d2a3e31dd99f07f13f051d71dc889946b80e94efde5e8cdc03914217081d32612409bbe8d911ed080353eba74be0d612bff96b2bb43d104957c901e3bc0374877604318711b817e0d9e312e58a9c82982c678b8f6a5a29b7c58ded1ccdcdf710b59c93111162ea5c3383bdc9cc15ec41baa365a79702844f51f6bf6c67473a359353695dfa2bf0c1fdc40ba2c556df54cb99445247a9404a17b74a8a7fe55e7222b7447929955cdf4377996188d050da28f7c9baab77b7ada0f6341baedaae5d71c5e32e906c19c69c8ea3e30c0bf2cd42cc18ce1ca7e1316a058b7bce78e5d23d7d709c5dcc736f796077ea1c7790af53f796285eb4cc0e88a9ac6755f2e787a0822a6a0fc9d90f5bda6b2435790534191d610c1f97369755c8395b4dd1a3973c4b54781a4f98784bee1a87633ec6a8dd538b46ea942c04cb5fdab29ad9810dee5f169864b97f23c38afd754f704dac7cdb3d8835d847c338add178fde5d7c18a9c76e15e1857644cccf9ef7e3986ca20733ab77631b94b2acaa06d89ad7a566c9594abdb8b35c9151e657e6d0142b5dcbea163da749094def14b6ae6e95402def2dbf98cf0e7664726718f7fb7983038beb945d76862385fc53c39b26fb24081ed0795cee66f273c45052bd48b52192553c46e586f94cf347f8afefc1f5b527c6bd742c6e578d4bd8846dc7076e8f0c6d2b412d01248981b6b1c126db4f7b08c868b5a2435a4d4756a9bb60ac2ce80742d2a090c68ffcf513bc461c4547105f91bcaf3c6fbfdd472bceb6a498b544e2dcefec21800a2dd3b06a9fb7f07fe176dba36d226c4422dc1891b27323f5e9b21829c334b4cc4f682949022c30446bc879b40d9bb639bb334fa5ad4cb923a37af7acad6379ff40617cee8a0ec3ed7ca2f0941254569c54516c7471c8bd0386d84abbdee54e4379b2b3aef5ed126d93ba17550f04f24182aeed26d3cbc63f034ddfec26d1f2280ae816992083f65b950a79b92df68080f07d8d7a49ba7f6d77a0aedc8f66ebb3cb2e8931ad5186bdd2ed55c21032445e661e23cdcdb4f57e31cd98ff72642d734adbc3c323de8294bfe74369b23289673310c6e56d6b8bac16372137feacdda044283bbb2d584e5f8016a13c946ffb8f47d9b6ca9a4619ebcf3f1108f6e20024a9840928680412707733858e4a35385b3347e9a42902e90b0005b04357f137419b20ac19aa62421589ee5dcccc05e3a736190fa277a1c9f0790f3f923c55c8869c807786940e5d078baff294af7480876118f6542f7b8c2d0ca96b593465b162863c25b6f7654ed682eb7019d6e381f94163048d69dbf0aeac6873a44aab8dc8184e1e82e35c10187340137fa00a35a581f2841b1d7df2decc4589c9af5b536d9380f515bffa568ef4fe0731e38f313aa50d98867b1c02bed34fafd3958a614263320f422515318b8c629270fd2a016fb88e868bb40da371e3fc210cb26a7d12e17a6894da49f4412aa1fc053a77b811b2ca662fea8af293c60e1d2f6261a48da08bbe3dcb19db9e98024f722769a696ac3f4cc7c4cf386515bda3277f6a9c3d843a221782796ab5161e84dfcb280b9c9c6a12512c7cf979f57ac5681d89305038b2bac58903387b25b83677be0eb6f73b762c1f9337f7326d5cb3b900d9bfeade06f78bab6006da647d07cb91cd50494ec98f09fd8cbde33c4bb81fad5490f68700f47cc9928ef1d3de15b559704e332d9da1e1200be8c0be89dc1e33d3265fe4f560707b00495d78e6a4ec19d28e09005ee023c140a7263dae93eb492b8c8c35a7b545ed3dc050ec6f07a1320f0a251f1edef20186330988d0e78d764ba17e1a621a8277d1857e5b3cf506ea7de6fede6ed9a7ceefdede4d9ef3205f66026c59c16106e6a1be213bf4fe13de876b71b145a0ee70d82c6a6256e0428cf8dfa6d22d719fa36112c394dc4c7d180003861709754dd5087936c0255a383e13707ee4d4cb63df27aed960c77c135169cad36c4d08a92f20f1c53ba237a3ea8eba7b8090e0115a7a3a7b563cef7273df2ce332e919f8fe7ff38023cc67e2f3f2b6a5e5944f0cd74f78fc7c2d299fb8b06965db2926784be52acd71a66744b40d7bb5af377e4a13120a090946f509a3145f5d0b6d05c6f4ab227d04066183a92f3b541143d314aa93ea6bb2058d5295bcfdcf7c184755584aff5acb46095d77e88e831371d480c613176ea491f735e615b3a5abf844ecb3b7b924a266e774f614760299a464f9d08ca5829384d2b784cc467da871a9a3c205ac03d834360e5b05cba15fb11924d294a6bd96ce26537ee599ee0a4c3ebcf0811c38a00a11dbc7dddf99beb587decab2695edf3bda6158efe7d3e0b1e1b1eb9de0af9ca6072e5ed12f7f2dae7ec4aff124dbe297f6d68fb55da3bfc4993497ef2d608314bd84c8f19980c16068cc160f160729ae00e902757298316a990d7d75fd42af1f5d2519cafe292d16305c4b90f42932b2cb096705cd1bf58c3e85e7f1ea6a804abda31596b87d9e7ad2b49b91971baabf5c8799a9459953d8af328cd31d91d61ceda8bce6aa5735e9cccd3cefb3d1092d798b5f687387f3372cd92989fbc734d52a5a873a7e384a485a2d0ece414967f611a4f6dbfa5b99f19d033c07a79f30a04ee11d6767bbdaecb1f3d9763ae26dda63ecec34354ed8ce2222010e63bfc29aae895f58b787e7c8c76764a79ee1bcd2a670bd61626b7eb49444d045217a216bdbdd56fadb5e63013952951e3647f7c0890aad61491e686864c52d8e3b3be7ada7ab73731bcc0d21d6f2a760ad84c9016a08fe04c39ab3e48ac0d7f1d8ed36cc5d5d977e33796bfc46b574bfa7301645e9d7bbd63f28edc001520706bc63d5ecb0c82d545c16d4178fc6dfbc572520efcfe578e5a0a0e41c90fe0cda063d6bc9ac15b8a9ffad7fa6864ba01e72da669e42957", "pubkey_hash=sha256:99381098f5db03f97b54026682ebe84865e3d9e0ebbe5e4c9a2055d3a45e29f5"],
+      "warnings": [],
+      "planning": {
+        "status": null,
+        "priority": null,
+        "depends": [],
+        "updated_at": null,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "restricted",
+        "redact_below": null
+      },
+      "content_hash": "99381098f5db03f97b54026682ebe84865e3d9e0ebbe5e4c9a2055d3a45e29f5",
+      "deleted_at": null
+    }
+  ],
+  "edges": [
+  ]
+}
