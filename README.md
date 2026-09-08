@@ -2,6 +2,8 @@
 
 A Cinema 4D **2026** plugin that fixes one gap in the stock **Axis Center** tools.
 
+![Axis Center Each palette](docs/axis_center_each.png)
+
 ## What it does
 
 Cinema 4D’s Axis Center palette can move an object’s axis (for example to the center of its points, or align it to World). That works great for one object.
