@@ -1,0 +1,18 @@
+{
+  "crux_version": 2,
+  "crux_id": "sha256:69c656850638a75a815dad5dd7b1d43d4b101bde75b2a861b7a0e231dc2f502d",
+  "crux_name": "c4d-axis-center-each-coms",
+  "crux_kind": "custom",
+  "crux_origin": "manual",
+  "created_at": 1788888637,
+  "last_modified_at": 1788888637,
+  "mesh_memberships": [{"mesh_id": "sha256:ef2bab08e0ff36e538a9c631d32407dfe74b12497602bcf45ea4eeceb9b4ef5b", "mesh_name": "c4d-axis-center-each", "joined_at": 1788888637, "cluster": null, "public_key_hash": "b957048452f1476fa4d10b363b616c0dffd16db78441d4727f7a5a93cb912cb2"}],
+  "modules": [
+  ],
+  "domains": [
+  ],
+  "nodes": [
+  ],
+  "edges": [
+  ]
+}

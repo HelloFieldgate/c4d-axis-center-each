@@ -1,0 +1,251 @@
+{
+  "crux_version": 2,
+  "crux_id": "sha256:4f3fa5dc7bac058c99de16a751da9a8b95571b9be941bb8d7b699fc0a7f65a5e",
+  "crux_name": "c4d-axis-center-each-code",
+  "crux_kind": "codebase",
+  "crux_origin": "manual",
+  "created_at": 1788888637,
+  "last_modified_at": 1788888637,
+  "mesh_memberships": [{"mesh_id": "sha256:ef2bab08e0ff36e538a9c631d32407dfe74b12497602bcf45ea4eeceb9b4ef5b", "mesh_name": "c4d-axis-center-each", "joined_at": 1788888637, "cluster": null, "public_key_hash": "0d71db908496a41c7693cba4a57b5d0ad77448e4b69ec6c83c90216c087dc11f"}],
+  "modules": [
+  ],
+  "domains": [
+  ],
+  "nodes": [
+    {
+      "node_id": "sha256:1e9f9e31aaa0b042f9c5243e97e5de989f7116573683eb1ede95efe5dc9e4f30",
+      "name": "c4d-axis-center-each-plan",
+      "kind": "goal",
+      "module": "roadmap",
+      "summary": "Agreed 2026-09-08: C4D 2026 dockable palette — Center Axis objects individually using stock Axis Center palette settings. MIT/GitHub. PLAN.md. Slices 0–2.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["roadmap", "plan", "c4d"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "planned",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:ff0ef75bed8d5ce9a9702dabf4461704dc9fd4eae230ce00bd62a702326404cb",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:5f3117523d99fa62398620e8ffeea994e97dfb99e16b0ce36c7a28da520af417",
+      "name": "slice-0-spike-center-per-object",
+      "kind": "milestone",
+      "module": "roadmap",
+      "summary": "PLANNED: spike driving Center tool (ID_MODELING_CENTER_TOOL / toolcenter) once per selected object on C4D 2026; match manual stock Execute.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["roadmap", "slice-0"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "planned",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:0da860d5ff0c09aa718e55d5c9519633f298bc27d67d354e354b74970dcacfe7",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:983b13aa4779c7d116f5d3247f9c1e231f4d64c0584b383c45ffca036d528760",
+      "name": "slice-1-dockable-palette",
+      "kind": "milestone",
+      "module": "roadmap",
+      "summary": "PLANNED: dockable dialog — checkbox Center Axis objects individually + Execute; batch undo; status counts; README.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["roadmap", "slice-1"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "planned",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:be15a894451a50b42b23807d1327f88b0cb461f7aa95648e8c0cbcbd25b4b676",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:27394d496b1c557d85378724321f22d6b29c1a25dde59835445d13de94ccbde8",
+      "name": "slice-2-polish-github",
+      "kind": "milestone",
+      "module": "roadmap",
+      "summary": "PLANNED: edge cases, large-selection polish, MIT LICENSE, GitHub public v0.1.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["roadmap", "slice-2"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "planned",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:5495d9f55ca874c0655aea9c931725c6242ddf9e1bccee28d791a29ab85eeead",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:121dc784b9468b7ef084723aec88affa08dfb942ee109a7f8703c4dedefd8e7f",
+      "name": "settings-from-stock-axis-center",
+      "kind": "decision",
+      "module": "product",
+      "summary": "Hans 2026-09-08: do not duplicate Axis Center options; read whatever is set on the stock palette.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["architecture", "decision"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "stable",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:38d890bf7a78968c8876514bc856d993a49eebc401d3d38367823ecc205697e7",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:5c85f0e3038d43f67358133f5f6a14c3a8efc88b35f0c4855f560fd70977dd71",
+      "name": "sibling-palette-not-hook-execute",
+      "kind": "decision",
+      "module": "product",
+      "summary": "Paul+Hans 2026-09-08: sibling dockable palette — do not patch/hook the stock Axis Center Execute button.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["architecture", "decision"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "stable",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:1d497d0d98fa672ba3f90c516bd3e48001dc3b9855e5014d31dc127b5ebe052a",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:82381943b466b3fefed43ab9782f9e9b9cbf98a93c3677ea1ab6e7950a50c175",
+      "name": "license-mit-github",
+      "kind": "decision",
+      "module": "product",
+      "summary": "Hans 2026-09-08: MIT on GitHub. Folder/repo c4d-axis-center-each.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["architecture", "decision"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "stable",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:81344df0284c7a54eee462acb74b53e96683bc024f54ecbf28ca8833a93e5bf5",
+      "deleted_at": null
+    },
+    {
+      "node_id": "sha256:83e575f71bf8401ae4527b7ff07b5ee0fcd5ea70a1fd222c30f8976045419dff",
+      "name": "target-c4d-2026",
+      "kind": "decision",
+      "module": "product",
+      "summary": "Hans 2026-09-08: primary target Cinema 4D 2026.",
+      "schema": {
+        "inputs": [],
+        "outputs": []
+      },
+      "tags": ["architecture", "decision"],
+      "reach": [],
+      "properties": [],
+      "warnings": [],
+      "planning": {
+        "status": "stable",
+        "priority": null,
+        "depends": [],
+        "updated_at": 1788888658,
+        "planned_for_update": false
+      },
+      "security": {
+        "classification": "internal",
+        "redact_below": null
+      },
+      "content_hash": "cruxv1:0b25d87979cd1b4fb8069eb8f6ac1776ce812e327f87f4c2cde5bdd5af7fee60",
+      "deleted_at": null
+    }
+  ],
+  "edges": [
+    { "edge_id": "sha256:d78264810d420fd45fe98f51408b49a05ed18a0c4c8b642e43b6c759ab3d5bcc", "src": "c4d-axis-center-each-plan", "dst": "slice-0-spike-center-per-object", "kind": "contains", "weight": 1, "detail": "slice", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:5b8bce3048ecbfc609bf2078d9338af2cbc42bd48f1f5dc49eb9511244c5126d", "src": "c4d-axis-center-each-plan", "dst": "slice-1-dockable-palette", "kind": "contains", "weight": 1, "detail": "slice", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:15806b816a07ab1c15a085c6775cced3d99885da437bf69b0ad70222d988f4d1", "src": "c4d-axis-center-each-plan", "dst": "slice-2-polish-github", "kind": "contains", "weight": 1, "detail": "slice", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:3399d2b1774bf536dae426d99e317df0c5c569f56e8f9bf44b7b09cdcb0aae3c", "src": "slice-1-dockable-palette", "dst": "slice-0-spike-center-per-object", "kind": "relates_to", "weight": 1, "detail": "needs spike", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:27e4d1bb5056b33a056d333edbc50630217ab4f3eea3f2101e87e95f8c3d5768", "src": "slice-2-polish-github", "dst": "slice-1-dockable-palette", "kind": "relates_to", "weight": 1, "detail": "after UI", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:b1137246d2ffe64a1fe64bd19b0d4c36f43b7153ca8f101809aba1da9bf5d8a3", "src": "c4d-axis-center-each-plan", "dst": "settings-from-stock-axis-center", "kind": "relates_to", "weight": 1, "detail": "lock", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:8074f85d29f9d0fd69b4998f1b314c45050f2b4817f219c8dcf17ab159b11f31", "src": "c4d-axis-center-each-plan", "dst": "sibling-palette-not-hook-execute", "kind": "relates_to", "weight": 1, "detail": "lock", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:845eb4fe6345505764782134d8843efa7d4e33b0487e9ad24832d9a92dc88a1d", "src": "c4d-axis-center-each-plan", "dst": "license-mit-github", "kind": "relates_to", "weight": 1, "detail": "lock", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false },
+    { "edge_id": "sha256:3a0e4683f1966fd4ac3544773c12977769d238adb09f304cc3a5ef5c3a8f4df3", "src": "c4d-axis-center-each-plan", "dst": "target-c4d-2026", "kind": "relates_to", "weight": 1, "detail": "lock", "cross_crux": false, "binding": "", "created_at": 1788888658, "dangling": false }
+  ]
+}
