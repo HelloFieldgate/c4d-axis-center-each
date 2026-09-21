@@ -1,5 +1,7 @@
 """Axis Center Each — dockable sibling palette for Cinema 4D 2026.
 
+Version: 0.2.0
+
 Checkbox + Execute: run the stock Axis Center action once per selected object,
 using the current Axis Center palette settings (via the matching menu command).
 
@@ -7,8 +9,6 @@ MIT License — see LICENSE in the repo root.
 """
 
 from __future__ import annotations
-
-import os
 
 import c4d
 from c4d import gui, plugins
@@ -185,10 +185,10 @@ class AxisCenterEachDialog(gui.GeDialog):
             m = result["skipped"]
             n = k + m
             action = result["command_name"]
-            msg = "Centered %s of %s (%s)" % (k, n, action)
+            status = "Centered %s of %s (%s)" % (k, n, action)
             if m:
-                msg += ", skipped %s" % m
-            self._set_status(msg)
+                status += ", skipped %s" % m
+            self._set_status(status)
             return True
 
         return True
@@ -198,23 +198,22 @@ class AxisCenterEachCommand(plugins.CommandData):
     dialog = None
 
     def Execute(self, doc):
-        return self._open()
+        # Menu / Commander open path — async Open, not Restore.
+        self.dialog = AxisCenterEachDialog()
+        return self.dialog.Open(
+            dlgtype=c4d.DLG_TYPE_ASYNC,
+            pluginid=PLUGIN_ID,
+            xpos=-1,
+            ypos=-1,
+            defaultw=280,
+            defaulth=120,
+        )
 
     def RestoreLayout(self, secret):
-        return self._open(secret)
-
-    def _open(self, secret=0):
-        if self.dialog is None:
-            self.dialog = AxisCenterEachDialog()
-        return self.dialog.Open(
-            c4d.DLG_TYPE_ASYNC,
-            PLUGIN_ID,
-            -1,
-            -1,
-            280,
-            120,
-            secret,
-        )
+        # Layout restore must use GeDialog.Restore(pluginid, secret).
+        # Open with a subid only attaches an empty dock shell (C4D 2026).
+        self.dialog = AxisCenterEachDialog()
+        return self.dialog.Restore(PLUGIN_ID, secret)
 
 
 if __name__ == "__main__":
